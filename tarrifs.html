@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .section-spacing {
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+
+        .pricing-card {
+            border: 1px solid #dee2e6;
+            padding: 35px;
+            height: 100%;
+        }
+
+        .pricing-card.highlight {
+            border: 2px solid black;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        footer {
+            border-top: 1px solid #dee2e6;
+            margin-top: 120px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent py-4">
+    <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Ren2Vous</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="acceuil.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link active fw-medium" href="tarrifs.html">Tarifs</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+<div class="container section-spacing text-center" style="max-width: 800px;">
+    <h1 class="fw-semibold mb-4">Tarifs</h1>
+
+    <div class="btn-group" role="group">
+        <button class="btn btn-outline-dark active">Mensuel</button>
+        <button class="btn btn-outline-dark">Annuel</button>
+    </div>
+</div>
+
+<div class="container section-spacing">
+
+    <h6 class="text-muted mb-5">Offres individuelles</h6>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="pricing-card">
+                <h6 class="fw-semibold">Starter</h6>
+                <div class="price mt-2">Gratuit</div>
+
+                <ul class="mt-4 small">
+                    <li>Réservation de rendez-vous basique</li>
+                    <li>Confirmations par e-mail</li>
+                    <li>Jusqu’à 50 réservations/mois</li>
+                </ul>
+
+                <button class="btn btn-outline-dark mt-4 w-100">Commencer</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="pricing-card highlight">
+                <h6 class="fw-semibold">Pro</h6>
+                <div class="price mt-2">19$<span class="fs-6">/mois</span></div>
+
+                <ul class="mt-4 small">
+                    <li>Réservations illimitées</li>
+                    <li>Rappels par SMS</li>
+                    <li>Intégrations calendrier</li>
+                    <li>Gestion des clients</li>
+                </ul>
+
+                <button class="btn btn-dark mt-4 w-100">Obtenir Pro</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="pricing-card">
+                <h6 class="fw-semibold">Ultra</h6>
+                <div class="price mt-2">49$<span class="fs-6">/mois</span></div>
+
+                <ul class="mt-4 small">
+                    <li>Tout ce qui est inclus dans Pro</li>
+                    <li>Analyses avancées</li>
+                    <li>Support prioritaire</li>
+                </ul>
+
+                <button class="btn btn-outline-dark mt-4 w-100">Obtenir Ultra</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container section-spacing">
+
+    <h6 class="text-muted mb-5">Offres professionnelles</h6>
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="pricing-card">
+                <h6 class="fw-semibold">Équipes</h6>
+                <div class="price mt-2">99$<span class="fs-6">/mois</span></div>
+
+                <ul class="mt-4 small">
+                    <li>Jusqu’à 10 comptes employés</li>
+                    <li>Calendrier partagé</li>
+                    <li>Rapports d’équipe</li>
+                    <li>Gestion des rôles et permissions</li>
+                </ul>
+
+                <button class="btn btn-outline-dark mt-4 w-100">Obtenir Équipes</button>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="pricing-card">
+                <h6 class="fw-semibold">Entreprise</h6>
+                <div class="price mt-2">Sur mesure</div>
+
+                <ul class="mt-4 small">
+                    <li>Personnel illimité</li>
+                    <li>Intégrations personnalisées</li>
+                    <li>Support dédié</li>
+                    <li>Sécurité avancée</li>
+                </ul>
+
+                <button class="btn btn-dark mt-4 w-100">Contacter les ventes</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container section-spacing" style="max-width: 800px;">
+
+    <h4 class="mb-4">Questions & Réponses</h4>
+
+    <div class="accordion" id="faq">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q1">
+                    Puis-je annuler à tout moment ?
+                </button>
+            </h2>
+            <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                    Oui. Vous pouvez passer à une offre supérieure, inférieure ou annuler à tout moment.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+                    Proposez-vous des remboursements ?
+                </button>
+            </h2>
+            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                    Nous offrons une garantie satisfait ou remboursé de 14 jours.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container text-center section-spacing">
+    <h2 class="fw-semibold mb-4">Commencez à gérer vos rendez-vous de manière professionnelle.</h2>
+    <button class="btn btn-dark px-4 me-2">Commencer</button>
+    <button class="btn btn-outline-dark px-4">Contacter les ventes</button>
+</div>
+
+</body>
+</html>

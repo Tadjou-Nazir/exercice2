@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+     <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .page-spacing {
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+
+        .small-muted {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .trust-section {
+            background-color: #e9ecef;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #adb5bd;
+        }
+
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-transparent py-4">
+    <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Ren2Vous</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="acceuil.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tarrifs.html">Tarrifs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-medium" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+<div class="container page-spacing" style="max-width: 750px;">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-semibold mb-3">Contact</h2>
+
+        <p class="small-muted mb-2">
+            Besoin de nous contacter ? Utilisez le formulaire ci-dessous et nous vous répondrons sous 24 à 48 heures.
+        </p>
+
+        <p class="small-muted mb-2">
+            Nous ne sommes pas disponibles le week-end.
+        </p>
+
+        <p class="fw-medium small">
+            Vous n’avez pas reçu d’e-mail de confirmation ? Veuillez vérifier votre dossier spam.
+        </p>
+    </div>
+
+    <form>
+
+        <div class="row g-3 mb-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Nom">
+            </div>
+
+            <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="E-mail">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Téléphone">
+        </div>
+
+        <div class="mb-4">
+            <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-dark px-4">
+            Envoyer
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
